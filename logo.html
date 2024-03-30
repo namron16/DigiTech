@@ -43,28 +43,28 @@
             <div class="logo-section1">
                 <form action="#" method="post">
                     <div class="logo-options">
-                        <label for="icon">
-                            <input type="radio" name="logo-options" id="icon" class="radio">
-                            <img src="img/logo-option1.png" alt="icon image">
-                        </label>
-
                         <label for="initials">
                             <input type="radio" name="logo-options" id="initials" class="radio">
-                            <img src="img/logo-option2.png" alt="initials logo">
+                            <img src="img/logo-option1.png" alt="initials image" id="initials-option">
+                        </label>
+
+                        <label for="icon">
+                            <input type="radio" name="logo-options" id="icon" class="radio">
+                            <img src="img/logo-option2.png" alt="icon logo" id="icon-option">
                         </label>
 
 
 
                         <label for="badge">
                             <input type="radio" name="logo-options" id="badge" class="radio">
-                            <img src="img/logo-option3.png" alt="badge logo">
+                            <img src="img/logo-option3.png" alt="badge logo" id="badge-option">
                         </label>
 
 
 
                         <label for="text">
                             <input type="radio" name="logo-options" id="text" class="radio">
-                            <img src="img/logo-option4.png" alt="text logo">
+                            <img src="img/logo-option4.png" alt="text logo" id="text-option">
                         </label>
 
                     </div>
@@ -80,10 +80,10 @@
                 <textarea name="description" id="description"
                     placeholder="Description (e.g BW background with flames on the side)"></textarea>
             </div>
-            <input type="button" value="Submit" class="logo-btn enter">
+            <input type="button" value="Submit" class="logo-btn enter" id="logo-submit-btn">
             </form>
         </div>
-        <script src="main.js"></script>
+        <script src="logo-form.js"></script>
     </main>
 
 </body>

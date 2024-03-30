@@ -395,6 +395,7 @@ textarea:focus-visible {
 }
 
 .contact-section1 textarea {
+    color: var(--clr-light);
     max-width: 500px;
     min-width: 300px;
     max-height: 150px;
@@ -811,9 +812,7 @@ textarea:focus-visible {
 }
 
 .logo-section2 input,
-textarea,
-.tdesign-section2 input,
-textarea {
+.logo-section2 textarea {
     display: block;
     margin: 1.5rem auto;
     width: 700px;
@@ -920,6 +919,21 @@ textarea {
 
 .tdesign-radio:checked+img {
     border: 2px solid var(--clr-purple);
+}
+
+.tdesign-section2 input,
+textarea {
+    display: block;
+    margin: 1.5rem auto;
+    width: 700px;
+    height: 20px;
+    color: var(--clr-dark);
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 2px solid var(--clr-light);
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
 }
 
 .tdesign-btn {
@@ -1572,9 +1586,7 @@ textarea {
     }
 
     .logo-section2 input,
-    textarea,
-    .tdesign-section2 input,
-    textarea {
+    .logo-section2 textarea {
         display: block;
         margin: 1.5rem auto;
         width: 250px;
@@ -1666,6 +1678,21 @@ textarea {
         width: 100px;
         height: 100px;
         margin: 0 auto;
+    }
+
+    .tdesign-section2 input,
+    .tdesign-section2 textarea {
+        display: block;
+        margin: 1.5rem auto;
+        width: 250px;
+        height: 20px;
+        color: var(--clr-dark);
+        padding: 0.5rem;
+        background-color: transparent;
+        border: 2px solid var(--clr-light);
+        border-radius: 10px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1rem;
     }
 
     .tdesign-btn {
