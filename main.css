@@ -945,7 +945,7 @@ textarea {
 
     .icon-header {
         display: flex;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         width: 100%;
     }
 
@@ -964,10 +964,10 @@ textarea {
     }
 
     .logo img {
-        width: 100px;
-        height: 100px;
-        margin-left: 1rem;
-        margin-top: -0.5rem;
+        width: 80px;
+        height: 80px;
+        margin-left: 0rem;
+        margin-top: -0.1rem;
         float: left;
     }
 
