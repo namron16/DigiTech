@@ -1471,7 +1471,7 @@ textarea {
         color: var(--clr-light);
     }
 
-    .transparent{
+    .transparent {
         background-color: transparent;
     }
 
@@ -1492,7 +1492,8 @@ textarea {
         text-align: center;
     }
 
-    .option1, .option2 {
+    .option1,
+    .option2 {
         color: var(--clr-light);
         max-width: 100%;
         min-width: 300px;
@@ -1500,10 +1501,11 @@ textarea {
         text-align: center;
     }
 
-    .select-service{
+    .select-service {
         font-size: 0.7rem;
 
     }
+
     #logo-btn {
         width: 200px;
         background-color: var(--clr-folly);
@@ -1525,11 +1527,13 @@ textarea {
         background-size: cover;
     }
 
+
+
     .logo-making p {
         font-size: 0.8rem;
         text-align: center;
         color: var(--clr-folly);
-        margin-top: 5em;
+        margin-top: 3em;
     }
 
     .logo-making h1 {
@@ -1541,23 +1545,18 @@ textarea {
         text-align: center;
     }
 
-    .logo-section1 {
-        display: flex;
-        justify-content: center;
-        margin: 2rem auto;
-        margin-top: 3rem;
+    .logo-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+
     }
 
-    .tdesign-section1 {
-        display: flex;
-        justify-content: center;
-        margin: 2rem auto;
-    }
 
     .logo-section1 img {
         margin: 0 auto;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 100px;
     }
 
@@ -1568,13 +1567,17 @@ textarea {
         width: 100%;
     }
 
+    .logo-section2 h1 {
+        font-size: 1.8rem;
+    }
+
     .logo-section2 input,
     textarea,
     .tdesign-section2 input,
     textarea {
         display: block;
         margin: 1.5rem auto;
-        width: 300px;
+        width: 250px;
         height: 20px;
         color: #fff;
         padding: 0.5rem;
@@ -1587,8 +1590,8 @@ textarea {
 
     .logo-section2 textarea,
     .tdesign-section2 textarea {
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 250px;
+        min-width: 250px;
         max-height: 100px;
         min-height: 80px;
     }
@@ -1650,6 +1653,11 @@ textarea {
         font-weight: 900;
     }
 
+    .tdesign-options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .tdesign-section1 p {
         text-align: center;
     }
@@ -1657,7 +1665,7 @@ textarea {
     .tdesign-section1 img {
         width: 100px;
         height: 100px;
-        margin-inline: 0.5rem;
+        margin: 0 auto;
     }
 
     .tdesign-btn {
