@@ -14,4 +14,6 @@ document.getElementById("contact-btn").onclick = function () {
   console.log("Phone: " + userPhone);
   console.log("Email: " + userEmail);
   console.log("Message: " + userMessage);
+
+  alert("Thank you! Your Details and Message have been sent");
 };
