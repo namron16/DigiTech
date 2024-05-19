@@ -66,22 +66,51 @@
                             <input type="radio" name="logo-options" id="text" class="radio">
                             <img src="img/logo-option4.png" alt="text logo" id="text-option">
                         </label>
-
                     </div>
+                    <div class="logo-description">
+                        <textarea name="description" id="description"
+                            placeholder="Description (e.g BW background with flames on the side)"></textarea>
+                    </div>
+                </form>
             </div>
-            <div class="logo-section2">
-                <h1>User Information</h1>
-                <label for="name"></label>
-                <input type="text" id="name" placeholder="Name">
-                <label for="phone"></label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <textarea name="description" id="description"
-                    placeholder="Description (e.g BW background with flames on the side)"></textarea>
+            <div class="logo-payment-head">
+                <h1>Payment</h1>
+                <p>Accepted Cards:</p>
+                <div class="card-logos">
+                    <img src="img/visa-logo.png" alt="visa card logo">
+                    <img src="img/mastercard-logo.png" alt="mastercard logo">
+                </div>
+            </div>
+            <div class="logo-container">
+                <div class="logo-section2">
+                    <div class="user-info">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="payment">
+                        <label for="card-name">Name On Card:</label>
+                        <input type="text" placeholder="Mr. John Doe" id="card-name">
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" placeholder="1111-2222-3333-4444" id="card-number">
+                        <label for="exp-month">Exp Month:</label>
+                        <input type="text" placeholder="January" id="exp-month">
+                    </div>
+                </div>
+                <div class="code-year-cvv">
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="text" id="zip-code" placeholder="123 456">
+                    <label for="exp-year">Exp Year:</label>
+                    <input type="text" id="exp-year" placeholder="2024">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" placeholder="1234">
+                </div>
             </div>
             <input type="button" value="Submit" class="logo-btn enter" id="logo-submit-btn">
-            </form>
+
         </div>
         <script src="logo-form.js"></script>
     </main>

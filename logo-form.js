@@ -2,15 +2,38 @@ document.addEventListener("DOMContentLoaded", function () {
   function submitForm(event) {
     event.preventDefault();
 
-    var selectedOption = document.querySelector(
+    let selectedOption = document.querySelector(
       'input[name="logo-options"]:checked'
     );
-    var logoOption = selectedOption ? selectedOption.id : null;
+    let logoOption = selectedOption ? selectedOption.id : null;
 
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
-    var description = document.getElementById("description").value;
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let description = document.getElementById("description").value;
+    let cardName = document.getElementById("card-name").value;
+    let cardNumber = document.getElementById("card-number").value;
+    let expMonth = document.getElementById("exp-month").value;
+    let zipcode = document.getElementById("zip-code").value;
+    let expYear = document.getElementById("exp-year").value;
+    let cvv = document.getElementById("cvv").value;
+
+    if (
+      !logoOption ||
+      !name ||
+      !phone ||
+      !email ||
+      !description ||
+      !cardName ||
+      !cardNumber ||
+      !expMonth ||
+      !zipcode ||
+      !expYear ||
+      !cvv
+    ) {
+      alert("Please fill in all required fields.");
+      return;
+    }
 
     console.log("Selected Logo Option: " + logoOption);
     console.log("User Information:");

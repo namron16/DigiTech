@@ -752,13 +752,13 @@ textarea:focus-visible {
     font-family: 'Quicksand', sans-serif;
     background: rgba(0, 0, 0, 0.8) url(img/logo-bgn.png) center;
     background-blend-mode: darken;
-    background-size: cover;
+    background-size: auto;
 }
 
-.logo-making p {
+.logo-making>p {
     text-align: center;
     color: var(--clr-folly);
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .logo-making h1 {
@@ -768,7 +768,6 @@ textarea:focus-visible {
     font-size: 3rem;
     color: var(--clr-light);
     text-align: center;
-
 }
 
 .logo-section1,
@@ -807,31 +806,42 @@ textarea:focus-visible {
 
 
 .logo-section2 {
-    margin-top: 10em;
     width: 100%;
 }
 
-.logo-section2 input,
-.logo-section2 textarea {
+.logo-section2 input {
     display: block;
-    margin: 1.5rem auto;
-    width: 700px;
-    height: 20px;
-    color: #fff;
+    margin: 0.5rem auto;
+    width: 200px;
+    height: 10px;
     padding: 0.5rem;
     background-color: transparent;
     border: 2px solid var(--clr-light);
-    border-radius: 10px;
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
 }
 
-.logo-section2 textarea,
-.tdesign-section2 textarea {
-    max-width: 700px;
-    min-width: 300px;
-    max-height: 100px;
-    min-height: 80px;
+.logo-payment-head {
+    margin-top: 10em;
+    text-align: center;
+}
+
+.logo-payment-head p {
+    color: var(--clr-folly);
+}
+
+.logo-container {
+    background-color: #fff;
+    padding: 2em;
+    margin: 0 25em;
+}
+
+.logo-description textarea {
+    margin: 3em auto;
+    max-width: 500px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 100px;
 }
 
 .logo-btn {
@@ -865,8 +875,8 @@ textarea:focus-visible {
 }
 
 .tdesign-intro {
-    width: 50%;
-    height: 400px;
+    width: 55%;
+    height: 70svh;
     margin: 4em auto;
 }
 
@@ -876,7 +886,7 @@ textarea:focus-visible {
 }
 
 .tdesign-intro p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 2;
 }
 
@@ -885,13 +895,27 @@ textarea:focus-visible {
     font-weight: 900;
     text-transform: uppercase;
     color: var(--clr-purple);
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 .tdesign-making h1 {
     text-align: center;
     color: var(--clr-purple);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
     font-weight: 900;
+}
+
+.tdesign-description textarea {
+    margin: 1rem auto;
+    background-color: var(--clr-dark);
+    padding: 0.5rem;
+    border-radius: 10px;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 100px;
+    min-height: 100px;
 }
 
 .tdesign-section1 p {
@@ -899,6 +923,7 @@ textarea:focus-visible {
 }
 
 .tdesign-section1 img {
+    border-radius: 20%;
     width: 250px;
     height: 250px;
     margin-inline: 4em;
@@ -921,19 +946,54 @@ textarea:focus-visible {
     border: 2px solid var(--clr-purple);
 }
 
-.tdesign-section2 input,
-textarea {
+.payment-head {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+.card-logos img {
+    width: 150px;
+    height: 100px;
+}
+
+.tdesign-section2 input {
     display: block;
-    margin: 1.5rem auto;
-    width: 700px;
-    height: 20px;
-    color: var(--clr-dark);
+    width: 200px;
+    height: 10px;
     padding: 0.5rem;
-    background-color: transparent;
     border: 2px solid var(--clr-light);
-    border-radius: 10px;
     font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 0.5em 0;
     font-size: 1rem;
+    padding: 1.5em;
+}
+
+.tdesign-section2,
+.logo-section2 {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.code-year-cvv {
+    margin-top: 5px;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+.code-year-cvv input {
+    width: 50px;
+    height: 10px;
+    padding: 0.5rem;
+    margin-right: 1.6rem;
+    border: 2px solid var(--clr-light);
 }
 
 .tdesign-btn {
@@ -945,7 +1005,7 @@ textarea {
     border: none;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
 .tdesign-btn:hover {
@@ -959,7 +1019,7 @@ textarea {
 
     .icon-header {
         display: flex;
-        font-size: 1.1rem;
+        font-size: 1rem;
         width: 100%;
     }
 
@@ -980,7 +1040,8 @@ textarea {
     .logo img {
         width: 80px;
         height: 80px;
-        margin-left: 0rem;
+        margin-right: 1rem;
+        margin-left: 0.3rem;
         margin-top: -0.1rem;
         float: left;
     }
@@ -993,7 +1054,7 @@ textarea {
 
     .navlink .nav-links {
         display: inline;
-        margin: 1.5rem 1.2rem;
+        margin: 1.5rem 1rem;
     }
 
 
@@ -1006,26 +1067,26 @@ textarea {
     }
 
     .home-body h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 700;
     }
 
     .home-body p {
         color: var(--clr-ochre);
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .enter {
         text-transform: uppercase;
-        font-size: 1.5em;
+        font-size: 1em;
         margin: -20px auto;
         text-align: center;
         display: block;
         text-decoration: none;
         color: #fff;
         border: 2px solid #fff;
-        width: 300px;
+        width: 200px;
         padding: 0.5em;
     }
 
@@ -1070,13 +1131,13 @@ textarea {
     .about-body {
         scroll-behavior: smooth;
         text-align: center;
-        margin: 1rem 3rem
+        margin: 1rem 0.5rem
     }
 
     .about-body h1 {
         font-family: 'General-sans', sans-serif;
         color: var(--clr-folly);
-        font-size: 4rem;
+        font-size: 2rem;
         text-transform: uppercase;
         font-weight: 900;
     }
@@ -1264,7 +1325,7 @@ textarea {
         background: none;
         display: block;
         padding: 0.5rem;
-        width: 300px;
+        width: 250px;
         margin: 1rem auto;
         font-family: "Quicksand", sans-serif;
         border: 1px solid #fff;
@@ -1274,10 +1335,10 @@ textarea {
     }
 
     #message {
-        min-width: 300px;
-        max-width: 300px;
-        min-height: 200px;
-        max-height: 300px;
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 150px;
+        max-height: 150px;
     }
 
 
@@ -1493,7 +1554,7 @@ textarea {
     .select-service {
         display: block;
         margin: 5em auto;
-        width: 90%;
+        width: 100%;
     }
 
     .select-service h1 {
@@ -1510,7 +1571,7 @@ textarea {
     .option2 {
         color: var(--clr-light);
         max-width: 100%;
-        min-width: 300px;
+        min-width: 250px;
         padding: 1rem;
         text-align: center;
     }
@@ -1554,7 +1615,7 @@ textarea {
         font-family: 'General-sans', sans-serif;
         font-weight: 900;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: var(--clr-light);
         text-align: center;
     }
@@ -1563,7 +1624,6 @@ textarea {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5em;
-
     }
 
 
@@ -1574,44 +1634,47 @@ textarea {
         border-radius: 100px;
     }
 
-
-
     .logo-section2 {
-        margin-top: 10em;
-        width: 100%;
+        margin: 0px;
     }
 
-    .logo-section2 h1 {
-        font-size: 1.8rem;
-    }
-
-    .logo-section2 input,
-    .logo-section2 textarea {
+    .logo-section2 input {
         display: block;
         margin: 1.5rem auto;
-        width: 250px;
-        height: 20px;
-        color: #fff;
+        width: 100px;
+        height: 10px;
         padding: 0.5rem;
         background-color: transparent;
         border: 2px solid var(--clr-light);
-        border-radius: 10px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 1rem;
     }
 
-    .logo-section2 textarea,
-    .tdesign-section2 textarea {
-        max-width: 250px;
-        min-width: 250px;
-        max-height: 100px;
-        min-height: 80px;
+    .logo-payment-head {
+        margin-top: 10em;
+        text-align: center;
+    }
+
+    .logo-payment-head p {
+        color: var(--clr-folly);
+    }
+
+    .logo-container {
+        width: 70%;
+        margin: 3rem auto;
+        font-size: 0.5rem;
+    }
+
+    .logo-description textarea {
+        margin: 3em auto;
+        max-width: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        min-height: 100px;
     }
 
     .logo-btn {
-        width: 200px;
+        width: 150px;
         padding: 0.5rem;
-        height: 50px;
+        height: 40px;
         border-radius: 10px;
         background-color: transparent;
         display: block;
@@ -1622,6 +1685,7 @@ textarea {
 
     .tdesign-body {
         font-family: 'Quicksand', sans-serif;
+        width: 100%;
 
     }
 
@@ -1634,11 +1698,10 @@ textarea {
     }
 
     .tdesign-intro {
-        width: 80%;
+        width: 70%;
         height: 100%;
-        margin: 4em auto;
         margin-top: 0px;
-        padding: 5rem 1rem;
+        padding: 2rem 0.5rem;
     }
 
     .tdesign-intro :nth-child(1) {
@@ -1656,13 +1719,14 @@ textarea {
         font-weight: 900;
         text-transform: uppercase;
         color: var(--clr-purple);
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .tdesign-making h1 {
         text-align: center;
         color: var(--clr-purple);
         font-weight: 900;
+        font-size: 1em;
     }
 
     .tdesign-options {
@@ -1675,13 +1739,12 @@ textarea {
     }
 
     .tdesign-section1 img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin: 0 auto;
     }
 
-    .tdesign-section2 input,
-    .tdesign-section2 textarea {
+    .tdesign-section2 input {
         display: block;
         margin: 1.5rem auto;
         width: 250px;
@@ -1690,9 +1753,71 @@ textarea {
         padding: 0.5rem;
         background-color: transparent;
         border: 2px solid var(--clr-light);
+    }
+
+    .tdesign-description textarea {
+        margin: 1rem auto;
+        background-color: var(--clr-dark);
+        padding: 0.5rem;
         border-radius: 10px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 1rem;
+        max-width: 200px;
+        min-width: 200px;
+        max-height: 100px;
+        min-height: 100px;
+    }
+
+    .payment-head {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+
+    .card-logos img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .tdesign-section2 input {
+        display: block;
+        width: 80px;
+        font: 0.5rem;
+        height: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .user-info input,
+    .payment input {
+        height: 10px;
+        font-size: 0.5rem;
+        padding: 5px;
+    }
+
+    .container {
+        font-size: 0.5rem;
+        padding: 1.5em;
+    }
+
+    .tdesign-section2,
+    .logo-section2 {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .code-year-cvv {
+        margin-top: 5px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .code-year-cvv input {
+        width: 25px;
+        font-size: 0.5rem;
+        height: 5px;
+        padding: 5px;
+        border: 2px solid var(--clr-light);
+        margin-inline: 0;
     }
 
     .tdesign-btn {
