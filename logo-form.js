@@ -9,28 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
-    let email = document.getElementById("email").value;
     let description = document.getElementById("description").value;
-    let cardName = document.getElementById("card-name").value;
-    let cardNumber = document.getElementById("card-number").value;
-    let expMonth = document.getElementById("exp-month").value;
-    let zipcode = document.getElementById("zip-code").value;
-    let expYear = document.getElementById("exp-year").value;
-    let cvv = document.getElementById("cvv").value;
+    let amount = document.getElementById("amount").value;
 
-    if (
-      !logoOption ||
-      !name ||
-      !phone ||
-      !email ||
-      !description ||
-      !cardName ||
-      !cardNumber ||
-      !expMonth ||
-      !zipcode ||
-      !expYear ||
-      !cvv
-    ) {
+    if (!logoOption || !name || !phone || !amount || !description) {
       alert("Please fill in all required fields.");
       return;
     }
@@ -38,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Selected Logo Option: " + logoOption);
     console.log("User Information:");
     console.log("Name: " + name);
-    console.log("Phone: " + phone);
-    console.log("Email: " + email);
+    console.log("Amount: " + amount);
     console.log("Description: " + description);
     alert("Thank you! Your Details and Request have been sent");
     document.querySelector(
@@ -47,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ).checked = false;
     document.getElementById("name").value = "";
     document.getElementById("phone").value = "";
-    document.getElementById("email").value = "";
     document.getElementById("description").value = "";
+    document.getElementById("amount").value = "";
   }
 
   document
